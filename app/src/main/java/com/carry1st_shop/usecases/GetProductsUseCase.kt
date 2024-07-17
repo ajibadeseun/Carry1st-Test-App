@@ -11,6 +11,7 @@ import com.carry1st_shop.utils.Result
 class GetProductsUseCase @Inject constructor(private val productRepository: ProductRepository) {
     operator fun invoke(): Flow<Result<List<Product>>> {
         val errorMessage = "An error has occurred"
+
         return productRepository.getProducts().map { result ->
             when (result) {
                 is Result.Error -> Result.Error(result.errorResponse?: ErrorResponse(
