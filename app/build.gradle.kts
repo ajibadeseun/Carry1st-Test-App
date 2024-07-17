@@ -91,8 +91,10 @@ dependencies {
     kapt(libs.hilt.android.compiler)
     kapt(libs.hilt.compiler)
     kaptAndroidTest(libs.hilt.android.compiler)
+    kaptAndroidTest(libs.hilt.compiler)
     implementation (libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.navigation.compose)
+    androidTestImplementation(libs.hilt.android.testing)
 
     // ViewModel
     implementation (libs.androidx.lifecycle.viewmodel.ktx)
@@ -104,6 +106,11 @@ dependencies {
     implementation (libs.androidx.lifecycle.runtime.compose)
     //timber
     implementation(libs.timber.log)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.kotlin.corountine.test)
+    testImplementation(libs.androidx.arch.core.test)
+    testImplementation(libs.mockk)
+    androidTestImplementation(libs.mockito.android)
 }
 // Allow references to generated code
 kapt {

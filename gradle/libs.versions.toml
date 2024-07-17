@@ -20,6 +20,11 @@ androidGradlePlugin = "7.4.2"
 hiltNavigationCompose = "1.2.0"
 timber = "5.0.1"
 androidxNavigationCompose = "2.7.7"
+mockitoCore = "3.11.2"
+kotlinCorountineTest = "1.6.0"
+androidxArchCoreTest = "2.1.0"
+mockk = "1.12.0"
+mockitoAndroid = "5.10.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -61,6 +66,11 @@ hilt-compiler = {module = "com.google.dagger:hilt-compiler", version.ref = "hilt
 hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
 hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
 timber-log = {module = "com.jakewharton.timber:timber", version.ref = "timber"}
+mockito_core = {module="org.mockito:mockito-core", version.ref = "mockitoCore"}
+kotlin_corountine_test = {module="org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref="kotlinCorountineTest"}
+androidx_arch_core_test ={module="androidx.arch.core:core-testing", version.ref = "androidxArchCoreTest"}
+mockk = {module="io.mockk:mockk",version.ref="mockk"}
+mockito_android = {module="org.mockito:mockito-android", version.ref="mockitoAndroid"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

@@ -14,6 +14,8 @@ buildscript {
         classpath(libs.kotlin.gradle.plugin)
         classpath(libs.hilt.android.gradle.plugin)
         classpath ("com.squareup:javapoet:1.13.0")
+        classpath(libs.mockk)
+        classpath(libs.mockito.android)
         //classpath("com.diffplug.spotless:spotless-plugin-gradle:6.13.0")
     }
 }
